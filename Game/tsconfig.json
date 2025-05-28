@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Emisión y módulos */
+    "target": "ES2020",              /* Versión de JavaScript de salida */
+    "module": "ESNext",              /* Usa módulos ES para el navegador */
+    "moduleResolution": "node",      /* Resolución de imports estilo Node.js */
+
+    /* Rigidez y compatibilidad */
+    "strict": true,                  /* Activa chequeos estrictos */
+    "esModuleInterop": true,         /* Facilita importaciones CommonJS */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,            /* Omite chequeo de .d.ts externos */
+
+    /* Salida (aunque esbuild ignora outDir, sirve para tu editor) */
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    /* Generación de mapas (útil para depuración) */
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],           /* Sólo ts/tsx dentro de src */
+  "exclude": ["node_modules", "dist"]/* Excluye dependencias generadas */
+}
